@@ -3,149 +3,150 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>#gamestop @ Twitch stats by theluigiguy</title>
-<style type="text/css" title="darkred">
-/* <!-- <set hicell="#444444"> <set hicell2="#999999"> --> */
+<style type="text/css" title="softgreen">
+/* <!--
+This is a soft green theme that I created. It is the first of many that
+I
+will create.
+Visit http://ircstats.axelay.com to see it in action!
+
+Created by: Melody Mayberry, http://www.melbell.com
+
+Place this line in pisg.cfg
+<set hicell="#B4CEA9" hicell2="#CCEAC0">
+--> */
+
+/* <!-- These are for the regular links (in the stats) --> */
 a {
-    text-decoration:none; 
+    text-decoration: none;
+    font-weight: bold;
 }
 a:link {
-    color:#990000; 
+    color: #008800;
 }
 a:visited {
-    color:#990000;
-}
-a:hover {
- 	text-decoration:underline;
- 	color:#990000;
+    color: #008800;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: ##008800;
+}
+
+/* <!-- These are for other links EX: Links at the bottom of the page --> */
 a.background {
- 	text-decoration:none;
+    text-decoration: none;
 }
 
 a.background:link {
-    color:#990000; 
+    color: #008800;
 }
 
 a.background:visited {
-    color:#990000; 
+    color: #008800;
 }
 
 a.background:hover {
- 	text-decoration:underline;
- 	color:#990000;
+    text-decoration: underline;
+    color: #008800;
 }
 
 body {
- 	background-color:black;
- 	font-family: verdana, arial, sans-serif;
- 	font-size:13px;
- 	color:white;
-}
-
-table {
-	border-collapse:collapse;
+    background-color: #dfffd1;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    color: black;
 }
 
 td {
-	font-family: verdana, arial, sans-serif;
- 	font-size: 13px;
- 	color:white;
- 	text-align:left; 
-	border-color:black;
-	border-style:solid;
-	border-width:1px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: left;
 }
 
 .title {
- 	font-family: tahoma, arial, sans-serif;
- 	font-size: 16px;
- 	font-weight:bold;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+/* <!-- Cell Properties for Headlines EX: "Most Active Nicks" --> */
 .headtext {
-    font-family: verdana, arial, sans-serif;
-    font-size:13px;
-    color:white;
-    background-color:#444444;
-    border-color:#990000;
-    border-style:solid; 
-    text-align:center;
-    border-width:1px;
-    font-weight:bold;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #54604F;
 }
 
+/* <!-- Has no apparent effect --> */
 .headlinebg {
-    background-color:black; 
+    background-color: #000000;
 }
 
+/* <!-- Column Titles in Numbered Lists EX: "Most Active Nicks" --> */
 .tdtop {
-    background-color:#444444; 
-    color:white;
-    font-weight:normal;
+    background-color: #CDEBC1;
 }
 
+/* <!-- Cell in "Big Numbers" section, also the cells of the data in certain
+numbered lists (all except the "Most active nicks" and the "Users with
+most
+nicknames" sections) --> */
 .hicell {
-    background-color:#AAAAAA; 
-    color:black;
+    background-color: #C1DDB5;
 }
 
+/* <!-- Cells of the data in "Users with most nicknames" section --> */
 .hicell10 {
- 	background-color:#AAAAAA;
- 	font-size:10px;
-    color:black;
+    background-color: #C1DDB5;
+    font-size: 10px;
 }
 
+/* <!-- In numbered lists, the cell properties for 2+ --> */
 .rankc {
-    background-color:#AAAAAA; 
-    color:black;
+    background-color: #B4CEA9;
 }
 
+/* <!-- In numbered lists, the cell properties for 1 --> */
 .hirankc {
- 	background-color:#444444;
- 	font-weight:bold;
-    color:white;
+    background-color: #91AC87;
+    font-weight: bold;
 }
 
+/* <!-- Name Cells in These Didn't Make It... --> */
 .rankc10 {
- 	background-color:#AAAAAA;
- 	font-size:10px;
-    color:black;
+    background-color: #CCEAC0;
+    font-size: 10px;
 }
 
+/* <!-- Hours "1-23"  in Most Active Times Cell --> */
 .rankc10center {
- 	background-color:#AAAAAA;
- 	font-size:10px;
- 	text-align:center;
-    color:black;
+    background-color: #B4CEA9;
+    font-size: 10px;
+    text-align: center;
 }
 
+/* <!-- Hour "0" in Most Active Times Cell --> */
 .hirankc10center {
- 	background-color:#AAAAAA;
- 	font-weight:bold;
- 	font-size:10px;
- 	text-align:center;
-    color:black;
+    background-color: #91AC87;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
 }
 
 .small {
- 	font-family: verdana,arial, sans-serif;
- 	font-size:10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
 }
+
 
 .asmall {
- 	font-family: arial narrow, sans-serif;
- 	font-size:10px;
- 	color:white;
+      font-family: "Arial narrow", Arial, sans-serif;
+      font-size: 10px;
+      color: black;
+      text-align: center;
 }
-
-.asmallcenter {
- 	font-family: arial narrow, sans-serif;
- 	font-size:10px;
- 	color:black;
- 	text-align:center;
-}
-
 </style>
 </head>
 <body>
@@ -153,7 +154,7 @@ td {
 
 <span class="title">#gamestop @ Twitch stats by theluigiguy</span><br />
 <br />
-Statistics generated on  Wednesday 3 May 2017 - 12:10:24
+Statistics generated on  Wednesday 3 May 2017 - 12:28:00
 <br />During this 1-day reporting period, a total of <b>147</b> different nicks were represented on #gamestop.<br /><br />
    <br />
    <table width="710" cellpadding="1" cellspacing="0" border="0">
@@ -245,7 +246,7 @@ Statistics generated on  Wednesday 3 May 2017 - 12:10:24
 <td style="background-color: #babadc"><span>thegreekmc</span></td><td style="background-color: #babadc">40</td><td style="background-color: #babadc"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="40" title="40" /></td><td style="background-color: #babadc">today</td><td style="background-color: #babadc">"No ZestyGamer270 sorry bud tagged the wrong person"</td>
 </tr>
 <tr><td class="rankc" align="left">2</td>
-<td style="background-color: #bbbbdb"><span>skyakin</span></td><td style="background-color: #bbbbdb">36</td><td style="background-color: #bbbbdb"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="36" title="36" /></td><td style="background-color: #bbbbdb">today</td><td style="background-color: #bbbbdb">"took me a min to realize you mean U.S."</td>
+<td style="background-color: #bbbbdb"><span>skyakin</span></td><td style="background-color: #bbbbdb">36</td><td style="background-color: #bbbbdb"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="36" title="36" /></td><td style="background-color: #bbbbdb">today</td><td style="background-color: #bbbbdb">"hard to be on the stream xD wheb ya dont wanna spoil it haha"</td>
 </tr>
 <tr><td class="rankc" align="left">3</td>
 <td style="background-color: #bcbcda"><span>zombieboss_567</span></td><td style="background-color: #bcbcda">36</td><td style="background-color: #bcbcda"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="36" title="36" /></td><td style="background-color: #bcbcda">today</td><td style="background-color: #bcbcda">"you do not have to be active in chat"</td>
@@ -260,99 +261,99 @@ Statistics generated on  Wednesday 3 May 2017 - 12:10:24
 <td style="background-color: #bebed8"><span>rawrfulme</span></td><td style="background-color: #bebed8">25</td><td style="background-color: #bebed8"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="25" title="25" /></td><td style="background-color: #bebed8">today</td><td style="background-color: #bebed8">"the anxiety in me is realllllllll"</td>
 </tr>
 <tr><td class="rankc" align="left">7</td>
-<td style="background-color: #bfbfd8"><span>jacobfromstatefarm1</span></td><td style="background-color: #bfbfd8">22</td><td style="background-color: #bfbfd8"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="22" title="22" /></td><td style="background-color: #bfbfd8">today</td><td style="background-color: #bfbfd8">"who wants @bethesda to make a new elder scrolls"</td>
+<td style="background-color: #bfbfd8"><span>jacobfromstatefarm1</span></td><td style="background-color: #bfbfd8">22</td><td style="background-color: #bfbfd8"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="22" title="22" /></td><td style="background-color: #bfbfd8">today</td><td style="background-color: #bfbfd8">"i would die playing this game"</td>
 </tr>
 <tr><td class="rankc" align="left">8</td>
-<td style="background-color: #bfbfd7"><span>moobot</span></td><td style="background-color: #bfbfd7">20</td><td style="background-color: #bfbfd7"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="20" title="20" /></td><td style="background-color: #bfbfd7">today</td><td style="background-color: #bfbfd7">"Creeperhntr has won the raffle!"</td>
+<td style="background-color: #bfbfd7"><span>moobot</span></td><td style="background-color: #bfbfd7">20</td><td style="background-color: #bfbfd7"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="20" title="20" /></td><td style="background-color: #bfbfd7">today</td><td style="background-color: #bfbfd7">"Zer0defects has won the raffle!"</td>
 </tr>
 <tr><td class="rankc" align="left">9</td>
-<td style="background-color: #c0c0d6"><span>mrmushoe</span></td><td style="background-color: #c0c0d6">20</td><td style="background-color: #c0c0d6"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="20" title="20" /></td><td style="background-color: #c0c0d6">today</td><td style="background-color: #c0c0d6">"@classy_demon24 the one above the enemies?"</td>
+<td style="background-color: #c0c0d6"><span>mrmushoe</span></td><td style="background-color: #c0c0d6">20</td><td style="background-color: #c0c0d6"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="20" title="20" /></td><td style="background-color: #c0c0d6">today</td><td style="background-color: #c0c0d6">"@mdono42 rofl that was funny"</td>
 </tr>
 <tr><td class="rankc" align="left">10</td>
-<td style="background-color: #c1c1d6"><span>synfulhailey</span></td><td style="background-color: #c1c1d6">19</td><td style="background-color: #c1c1d6"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="19" title="19" /></td><td style="background-color: #c1c1d6">today</td><td style="background-color: #c1c1d6">"@Bethesda You're already a winner in our eyes! lol"</td>
+<td style="background-color: #c1c1d6"><span>synfulhailey</span></td><td style="background-color: #c1c1d6">19</td><td style="background-color: #c1c1d6"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="19" title="19" /></td><td style="background-color: #c1c1d6">today</td><td style="background-color: #c1c1d6">"i would love to work for @Bethesda :D lol!"</td>
 </tr>
 <tr><td class="rankc" align="left">11</td>
-<td style="background-color: #c1c1d5"><span>dmal_</span></td><td style="background-color: #c1c1d5">19</td><td style="background-color: #c1c1d5"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="19" title="19" /></td><td style="background-color: #c1c1d5">today</td><td style="background-color: #c1c1d5">"Thanks to everyone donating to the cause! You guys are awesome!"</td>
+<td style="background-color: #c1c1d5"><span>dmal_</span></td><td style="background-color: #c1c1d5">19</td><td style="background-color: #c1c1d5"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="19" title="19" /></td><td style="background-color: #c1c1d5">today</td><td style="background-color: #c1c1d5">"I am not gstaff, can I win? Kappa"</td>
 </tr>
 <tr><td class="rankc" align="left">12</td>
 <td style="background-color: #c2c2d4"><span>un4given_raider</span></td><td style="background-color: #c2c2d4">17</td><td style="background-color: #c2c2d4"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="17" title="17" /></td><td style="background-color: #c2c2d4">today</td><td style="background-color: #c2c2d4">"this game has me hyped for alien covenant"</td>
 </tr>
 <tr><td class="rankc" align="left">13</td>
-<td style="background-color: #c3c3d4"><span>alterrektmlg</span></td><td style="background-color: #c3c3d4">14</td><td style="background-color: #c3c3d4"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c3c3d4">today</td><td style="background-color: #c3c3d4">"i cant afford to buy a ps4 rip"</td>
+<td style="background-color: #c3c3d4"><span>cosmosvoid</span></td><td style="background-color: #c3c3d4">14</td><td style="background-color: #c3c3d4"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c3c3d4">today</td><td style="background-color: #c3c3d4">"too bad the demo is console only.."</td>
 </tr>
 <tr><td class="rankc" align="left">14</td>
-<td style="background-color: #c4c4d3"><span>omitat</span></td><td style="background-color: #c4c4d3">14</td><td style="background-color: #c4c4d3"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c4c4d3">today</td><td style="background-color: #c4c4d3">"But where is the Dishonored easteregg"</td>
+<td style="background-color: #c4c4d3"><span>alterrektmlg</span></td><td style="background-color: #c4c4d3">14</td><td style="background-color: #c4c4d3"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c4c4d3">today</td><td style="background-color: #c4c4d3">"in how much time is it noon in your place?"</td>
 </tr>
 <tr><td class="rankc" align="left">15</td>
-<td style="background-color: #c4c4d2"><span>burgerth1ng</span></td><td style="background-color: #c4c4d2">14</td><td style="background-color: #c4c4d2"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c4c4d2">today</td><td style="background-color: #c4c4d2">"send me your luck to win @mdono42"</td>
+<td style="background-color: #c4c4d2"><span>omitat</span></td><td style="background-color: #c4c4d2">14</td><td style="background-color: #c4c4d2"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c4c4d2">today</td><td style="background-color: #c4c4d2">"probably an easter egg for it"</td>
 </tr>
 <tr><td class="rankc" align="left">16</td>
-<td style="background-color: #c5c5d2"><span>cosmosvoid</span></td><td style="background-color: #c5c5d2">14</td><td style="background-color: #c5c5d2"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c5c5d2">today</td><td style="background-color: #c5c5d2">"arkane is the studio bethany esda just publishes"</td>
+<td style="background-color: #c5c5d2"><span>thefallenblocks</span></td><td style="background-color: #c5c5d2">14</td><td style="background-color: #c5c5d2"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c5c5d2">today</td><td style="background-color: #c5c5d2">"That's a cool hacking system laceLOL"</td>
 </tr>
 <tr><td class="rankc" align="left">17</td>
-<td style="background-color: #c6c6d1"><span>thefallenblocks</span></td><td style="background-color: #c6c6d1">14</td><td style="background-color: #c6c6d1"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c6c6d1">today</td><td style="background-color: #c6c6d1">"But I don't like sea food Kappa"</td>
+<td style="background-color: #c6c6d1"><span>burgerth1ng</span></td><td style="background-color: #c6c6d1">14</td><td style="background-color: #c6c6d1"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="14" title="14" /></td><td style="background-color: #c6c6d1">today</td><td style="background-color: #c6c6d1">"@Bethesda if winners aren't from US please pick me ok ;)"</td>
 </tr>
 <tr><td class="rankc" align="left">18</td>
-<td style="background-color: #c6c6d0"><span>cronsenburg</span></td><td style="background-color: #c6c6d0">13</td><td style="background-color: #c6c6d0"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="13" title="13" /></td><td style="background-color: #c6c6d0">today</td><td style="background-color: #c6c6d0">"ik it gave me chills hearing that"</td>
+<td style="background-color: #c6c6d0"><span>cronsenburg</span></td><td style="background-color: #c6c6d0">13</td><td style="background-color: #c6c6d0"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="13" title="13" /></td><td style="background-color: #c6c6d0">today</td><td style="background-color: #c6c6d0">"its gonna be may Kappa im the winner"</td>
 </tr>
 <tr><td class="rankc" align="left">19</td>
-<td style="background-color: #c7c7d0"><span>sixpathsngn</span></td><td style="background-color: #c7c7d0">12</td><td style="background-color: #c7c7d0"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="12" title="12" /></td><td style="background-color: #c7c7d0">today</td><td style="background-color: #c7c7d0">"Im going to get a bowl of cereal i'll be back lol"</td>
+<td style="background-color: #c7c7d0"><span>volgihn</span></td><td style="background-color: #c7c7d0">12</td><td style="background-color: #c7c7d0"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="12" title="12" /></td><td style="background-color: #c7c7d0">today</td><td style="background-color: #c7c7d0">"show is almost over, lets reach that 1000 goal!"</td>
 </tr>
 <tr><td class="rankc" align="left">20</td>
-<td style="background-color: #c8c8cf"><span>volgihn</span></td><td style="background-color: #c8c8cf">12</td><td style="background-color: #c8c8cf"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="12" title="12" /></td><td style="background-color: #c8c8cf">today</td><td style="background-color: #c8c8cf">"Mick gordon did this?! Kreygasm"</td>
+<td style="background-color: #c8c8cf"><span>sixpathsngn</span></td><td style="background-color: #c8c8cf">12</td><td style="background-color: #c8c8cf"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="12" title="12" /></td><td style="background-color: #c8c8cf">today</td><td style="background-color: #c8c8cf">"What are thoseeeee PogChamp ShazBotstix"</td>
 </tr>
 <tr><td class="rankc" align="left">21</td>
-<td style="background-color: #c9c9ce"><span>famicorps</span></td><td style="background-color: #c9c9ce">11</td><td style="background-color: #c9c9ce"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="11" title="11" /></td><td style="background-color: #c9c9ce">today</td><td style="background-color: #c9c9ce">"I like the in-game interfaces, they look nice"</td>
+<td style="background-color: #c9c9ce"><span>pdx_geek</span></td><td style="background-color: #c9c9ce">11</td><td style="background-color: #c9c9ce"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="11" title="11" /></td><td style="background-color: #c9c9ce">today</td><td style="background-color: #c9c9ce">"This combat reminds me of Doom 2016 a bit"</td>
 </tr>
 <tr><td class="rankc" align="left">22</td>
-<td style="background-color: #c9c9ce"><span>pdx_geek</span></td><td style="background-color: #c9c9ce">11</td><td style="background-color: #c9c9ce"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="11" title="11" /></td><td style="background-color: #c9c9ce">today</td><td style="background-color: #c9c9ce">"This combat reminds me of Doom 2016 a bit"</td>
+<td style="background-color: #c9c9ce"><span>famicorps</span></td><td style="background-color: #c9c9ce">11</td><td style="background-color: #c9c9ce"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="11" title="11" /></td><td style="background-color: #c9c9ce">today</td><td style="background-color: #c9c9ce">"You did @Gordon1470 :) congrats"</td>
 </tr>
 <tr><td class="rankc" align="left">23</td>
 <td style="background-color: #cacacd"><span>jordanjacob26</span></td><td style="background-color: #cacacd">10</td><td style="background-color: #cacacd"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="10" title="10" /></td><td style="background-color: #cacacd">today</td><td style="background-color: #cacacd">"Why are you beating a lady?!?!?!"</td>
 </tr>
 <tr><td class="rankc" align="left">24</td>
-<td style="background-color: #cbcbcc"><span>believedragons</span></td><td style="background-color: #cbcbcc">10</td><td style="background-color: #cbcbcc"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="10" title="10" /></td><td style="background-color: #cbcbcc">today</td><td style="background-color: #cbcbcc">"just downloaded the demo.. so do i play in the dark and in the mi"</td>
+<td style="background-color: #cbcbcc"><span>gamestop</span></td><td style="background-color: #cbcbcc">10</td><td style="background-color: #cbcbcc"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="10" title="10" /></td><td style="background-color: #cbcbcc">today</td><td style="background-color: #cbcbcc">"Lets hit $600 for another giveaway!"</td>
 </tr>
 <tr><td class="rankc" align="left">25</td>
-<td style="background-color: #cccccc"><span>jonthepenguin</span></td><td style="background-color: #cccccc">10</td><td style="background-color: #cccccc"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="10" title="10" /></td><td style="background-color: #cccccc">today</td><td style="background-color: #cccccc">"@jdbelcher1998 Pretty sure zombieboss is a bot, but the rules jus"</td>
+<td style="background-color: #cccccc"><span>anescalator</span></td><td style="background-color: #cccccc">10</td><td style="background-color: #cccccc"><img src="gfx//green-h.png" border="0" width="40" height="15" alt="10" title="10" /></td><td style="background-color: #cccccc">today</td><td style="background-color: #cccccc">"surely somme of the 100 people can donate"</td>
 </tr>
 </table><br />
 <br /><b><i>These didn't make it to the top:</i></b><table><tr>
-<td class="rankc10"><span>anescalator (10)</span></td>
-<td class="rankc10"><span>gamestop (10)</span></td>
-<td class="rankc10"><span>dethflash (9)</span></td>
+<td class="rankc10"><span>jonthepenguin (10)</span></td>
+<td class="rankc10"><span>believedragons (10)</span></td>
 <td class="rankc10"><span>dado09bz (9)</span></td>
 <td class="rankc10"><span>sandl0t (9)</span></td>
+<td class="rankc10"><span>dethflash (9)</span></td>
 </tr><tr>
-<td class="rankc10"><span>geveeso (8)</span></td>
-<td class="rankc10"><span>bumble_bb7 (8)</span></td>
-<td class="rankc10"><span>flyingdadb0mb (8)</span></td>
-<td class="rankc10"><span>jarime (8)</span></td>
 <td class="rankc10"><span>wizard1996 (8)</span></td>
-</tr><tr>
+<td class="rankc10"><span>flyingdadb0mb (8)</span></td>
+<td class="rankc10"><span>bumble_bb7 (8)</span></td>
 <td class="rankc10"><span>bun7gie (8)</span></td>
-<td class="rankc10"><span>oseetwitch (7)</span></td>
-<td class="rankc10"><span>danro5903 (7)</span></td>
-<td class="rankc10"><span>the1khan (7)</span></td>
-<td class="rankc10"><span>michaelnightmare (7)</span></td>
+<td class="rankc10"><span>geveeso (8)</span></td>
 </tr><tr>
+<td class="rankc10"><span>jarime (8)</span></td>
+<td class="rankc10"><span>danro5903 (7)</span></td>
+<td class="rankc10"><span>oseetwitch (7)</span></td>
+<td class="rankc10"><span>michaelnightmare (7)</span></td>
 <td class="rankc10"><span>gearsluvr (7)</span></td>
-<td class="rankc10"><span>bethesda (6)</span></td>
-<td class="rankc10"><span>e_bust (6)</span></td>
+</tr><tr>
+<td class="rankc10"><span>the1khan (7)</span></td>
+<td class="rankc10"><span>tjknuts (6)</span></td>
 <td class="rankc10"><span>zestygamer270 (6)</span></td>
 <td class="rankc10"><span>triscutbiscut9 (6)</span></td>
-</tr><tr>
-<td class="rankc10"><span>selectscarab (6)</span></td>
 <td class="rankc10"><span>ashes2glory (6)</span></td>
-<td class="rankc10"><span>neotim (6)</span></td>
-<td class="rankc10"><span>tjknuts (6)</span></td>
-<td class="rankc10"><span>classy_demon24 (5)</span></td>
 </tr><tr>
-<td class="rankc10"><span>lusal (5)</span></td>
-<td class="rankc10"><span>trialsfan (5)</span></td>
-<td class="rankc10"><span>eriberto310 (5)</span></td>
-<td class="rankc10"><span>sarcoth (5)</span></td>
+<td class="rankc10"><span>e_bust (6)</span></td>
+<td class="rankc10"><span>neotim (6)</span></td>
+<td class="rankc10"><span>selectscarab (6)</span></td>
+<td class="rankc10"><span>bethesda (6)</span></td>
+<td class="rankc10"><span>jdbelcher1998 (5)</span></td>
+</tr><tr>
 <td class="rankc10"><span>bagofmelk (5)</span></td>
+<td class="rankc10"><span>eriberto310 (5)</span></td>
+<td class="rankc10"><span>val_armorghulis (5)</span></td>
+<td class="rankc10"><span>theredtoast (5)</span></td>
+<td class="rankc10"><span>classy_demon24 (5)</span></td>
 </tr></table>
 <br /><b>By the way, there were 92 other nicks.</b><br />
    <br />
@@ -459,9 +460,9 @@ Statistics generated on  Wednesday 3 May 2017 - 12:10:24
 <td class="hicell">zombieboss_567</td>
 </tr>
 <tr><td class="rankc">10</td>
-<td class="hicell">there</td>
+<td class="hicell">everyone</td>
 <td class="hicell">15</td>
-<td class="hicell">volgihn</td>
+<td class="hicell">blacknikes20</td>
 </tr>
 </table>
    <br />
@@ -520,12 +521,12 @@ Statistics generated on  Wednesday 3 May 2017 - 12:10:24
 <td class="hicell">moobot</td>
 </tr>
 <tr><td class="rankc">2</td>
-<td class="hicell"><a href="https://docs.google.com/document/d/1EGRbmBIxV80YFlPtQfTP0NNJ0gJcQe2JnY0fYZCvzgc/edit?usp=sharing">https://docs.google.com/document/d/1EGRbmBIxV80YFlPtQfTP0NNJ</a></td>
+<td class="hicell"><a href="https://www.facebook.com/GameStop/app/208195102528120/">https://www.facebook.com/GameStop/app/208195102528120/</a></td>
 <td class="hicell">4</td>
 <td class="hicell">moobot</td>
 </tr>
 <tr><td class="rankc">3</td>
-<td class="hicell"><a href="https://www.facebook.com/GameStop/app/208195102528120/">https://www.facebook.com/GameStop/app/208195102528120/</a></td>
+<td class="hicell"><a href="https://docs.google.com/document/d/1EGRbmBIxV80YFlPtQfTP0NNJ0gJcQe2JnY0fYZCvzgc/edit?usp=sharing">https://docs.google.com/document/d/1EGRbmBIxV80YFlPtQfTP0NNJ</a></td>
 <td class="hicell">4</td>
 <td class="hicell">moobot</td>
 </tr>
